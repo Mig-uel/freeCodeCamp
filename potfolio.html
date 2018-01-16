@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Miguel's Portfolio</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Sanchez');
+            
+            body {
+                font-family: Sanchez;
+                background: #170B00;
+            }
+            .a {
+                /*border: 5px red solid;*/
+            }
+            .b {
+                /*border: 5px yellow solid;*/
+                background: #2a2a2a;
+                color: whitesmoke;
+            }
+            .bb {
+                /*border: 5px yellow solid;*/
+                background: whitesmoke;
+                color: #2a2a2a;
+            }
+            .c {
+                /*border: 5px orange solid;*/
+            }
+            .img {
+                width: 200px;
+                border-radius: 50%;
+            }
+            .img-works {
+                margin-top: 30px
+            }
+            .xz {  
+                border: none transparent;
+                border-bottom: 2px whitesmoke solid;
+                background-color: #2a2a2a;
+                outline: none;
+                color: whitesmoke;
+                opacity: .5;
+                resize: none;
+            }
+            .xz:hover {
+                opacity: 1;
+                transition: 1s;
+            }
+            .social {
+                /*border: 2px green solid;*/
+                border-radius: 50%;
+                width: 60px;
+                opacity: .5;
+            }
+            .social:hover {
+                opacity: 1;
+                transition: 1s;
+            }
+            a {
+                color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container a">
+            <div class="row b">
+                <div class="col-xs-12 c">
+                    <br>
+                    <br>
+                    <img class="img-fluid img center-block" alt="Profile Photo" src="http://www.agjshm.org/image/manshadow.png">
+                    <h1 class="text-center">Miguel Castillo</h1>
+                    <h4 class="text-center">I am a student majoring in Computer Science || <br> Aspiring developer.</h4>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            
+            <div class="row bb">
+                <div class="col-xs-12 c">
+                    <br>
+                    <br>
+                    <h1 class="text-center">Portfolio</h1>
+                    <br>
+                    <img class="img-fluid center-block img-works" alt="Placeholder for Works #1" src="http://via.placeholder.com/350x150">
+                    <img class="img-fluid center-block img-works" alt="Placeholder for Works #2" src="http://via.placeholder.com/350x150">
+                    <img class="img-fluid center-block img-works" alt="Placeholder for Works #3" src="http://via.placeholder.com/350x150">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            
+            <div class="row b">
+                <div class="col-xs-12 c">
+                    <br>
+                    <br>
+                    <h1 class="text-center">Contact Me</h1>
+                    <br>
+                    <form action="#">
+                        <h4 class="text-center">Name:</h4>
+                        <input class="center-block xz" name="name" type="text" placeholder="Jessica Rabbit">
+                        <br>
+                        <h4 class="text-center">Email Address:</h4>
+                        <input class="center-block xz" name="email" type="text" placeholder="jrabbit@cartoon.com">
+                        <br>
+                        <h4 class="text-center">Message:</h4>
+                        <textarea class="center-block xz" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <br>
+                        <input class="center-block btn-primary" type="submit" name="submit">
+                    </form>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            
+            <div class="row bb">
+                <div class="col-xs-6 c">
+                    <br>
+                    <h1>My Social Media</h1>
+                    <a alt="Twitter logo" target="_blank" href="https://twitter.com/migpug"><img class="img-fluid social " src="http://bit.ly/2gkzKT9"></a>
+                    <a alt="GitHub logo" target="_blank" href="https://github.com/MiguelsCode"><img class="img-fluid social" src="http://bit.ly/2mz1yT5"></a>
+                    <a alt="Instagram logo" target="_blank" href="https://instagram.com/m.ig.l"><img class="img-fluid social" src="http://bit.ly/2gqGsSg"></a>
+                </div>
+                <div class="col-xs-6 c">
+                    <br>
+                    <h1 class="text-center"> About this Page</h1>
+                    <h4 class="text-center">Created by Miguel. C for <a href="https://freecodecamp.org" target="_blank">freeCodeCamp.</a></h4>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+
+</html>
