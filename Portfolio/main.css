@@ -1,0 +1,32 @@
+* {
+  font-family: Poppins;
+  font-weight: 300;
+}
+#about {
+  background: red;
+  height: 700px;
+  background: #F2994A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#about h1, h2 {
+  position: relative;
+  top: 200px;
+  color: whitesmoke;
+
+}
+#about h1 {
+  font-size: 100px;
+  font-weight: 900;
+}
+#projects {
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 700px;
+}
+#contact {
+  background: orange;
+  height: 400px;
+}
