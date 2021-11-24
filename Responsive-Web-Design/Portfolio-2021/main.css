@@ -2,21 +2,52 @@
   font-family: Poppins;
   font-weight: 300;
 }
-#about {
+ul {
+  list-style: none;
+  padding: 0;
+  /* outline: 2px solid green; */
+}
+li a {
+  text-decoration: none;
+  color: whitesmoke;
+  float: left;
+}
+/* .text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+} */
+li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: 900;
+  /* outline: 2px solid blue; */
+}
+li a:hover {
+  color: black;
+}
+.contact-list-container {
+  /* outline: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 30%;
+}
+#welcome-section {
   background: red;
-  height: 700px;
+  height: 100vh;
   background: #F2994A;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-#about h1, h2 {
+#welcome-section h1, h2 {
   position: relative;
-  top: 200px;
+  top: 30%;
   color: whitesmoke;
 
 }
-#about h1 {
+#welcome-section h1 {
   font-size: 100px;
   font-weight: 900;
 }
@@ -24,9 +55,58 @@
   background: #232526;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 700px;
+  height: 100vh;
 }
 #contact {
-  background: orange;
-  height: 400px;
+  color: whitesmoke;
+  height: 80vh;
+  background: #F2994A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#contact h1 {
+  position: relative;
+  top: 30%;
+  font-size: 45px;
+  font-weight: 900;
+}
+#contact p {
+  position: relative;
+  top: 30%;
+  font-size: 2em;
+  font-weight: 300;
+}
+#projects {
+  outline: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+#project-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  outline: 2px solid red;
+}
+.project-tile {
+  width: 300px;
+  height: 300px;
+  background-color: #F2994A;
+  border-radius: 10px; 
+  outline: 2px solid red;
+}
+@media screen and (max-width: 600px) {
+  #welcome-section h1 {
+    font-size: 50px;
+  }
+  #welcome-section h2 {
+    font-size: 20px;
+  }
+  #contact h1 {
+    font-size: 30px;
+}
 }
