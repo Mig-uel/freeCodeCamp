@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Documentation</title>
+  <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <main class="grid-container" id="main-doc">
+    <section class="item1">
+      <nav class="nav-wrapper" id="navbar">
+        <header>
+          <h1>C# Documentation</h1>
+
+          <a class="nav-link" href="#intro">Introduction</a>
+          <a class="nav-link" href="#getting_started">Getting Started</a>
+          <a class="nav-link" href="#syntax">Syntax</a>
+          <a class="nav-link" href="#comments">Comments</a>
+          <a class="nav-link" href="#variables">Variables</a>
+        </header>
+      </nav>
+    </section>
+    <section class="item2">
+      <section class="main-section">
+        <header id="intro">
+          <h1>Introduction</h1>
+        </header>
+        <h3>What is C#?</h3>
+        <p>C# is pronounced "C-Sharp".
+
+          It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.
+
+          C# has roots from the C family, and the language is close to other popular languages like C++ and Java.
+
+          The first version was released in year 2002. The latest version, C# 8, was released in September 2019.
+
+          C# is used for:</p>
+        <ul>
+          <li>Mobile applications</li>
+          <li>Desktop Applications</li>
+          <li>Web Applications</li>
+          <li>Web Services</li>
+          <li>Websites</li>
+          <li>Games</li>
+          <li>VR</li>
+          <li>Database Applications</li>
+          <li>And much, much more!</li>
+        </ul>
+        <h3>Why Use C#?</h3>
+        <ul>
+          <li>It is one of the most popular programming language in the world</li>
+          <li>It is easy to learn and simple to use</li>
+          <li>It has a huge community support</li>
+          <li>C# is an object oriented language which gives a clear structure to programs and allows code to be reused,
+            lowering development costs.</li>
+          <li>As C# is close to C, C++ and Java, it makes it easy for programmers to switch to C# or vice versa</li>
+        </ul>
+      </section>
+      <section class="main-section">
+        <header id="getting_started">
+          <h1>Getting Started</h1>
+        </header>
+        <h3>C# IDE</h3>
+        <p>The easiest way to get started with C#, is to use an IDE.
+
+          An IDE (Integrated Development Environment) is used to edit and compile code.
+
+          In our tutorial, we will use Visual Studio Community, which is free to download from
+          https://visualstudio.microsoft.com/vs/community/.
+
+          Applications written in C# use the .NET Framework, so it makes sense to use Visual Studio, as the program, the
+          framework, and the language, are all created by Microsoft.</p>
+        <h3>C# Install</h3>
+        <p>Once the Visual Studio Installer is downloaded and installed, choose the .NET workload and click on the
+          Modify/Install button:</p>
+        <img src="https://www.w3schools.com/cs/Workload.png" alt="C# Install">
+        <p>After the installation is complete, click on the Launch button to get started with Visual Studio.
+
+          On the start window, choose Create a new project:</p>
+        <img src="https://www.w3schools.com/cs/Newproject.png" alt="C# Install">
+        <p>Then click on the "Install more tools and features" button:</p>
+        <img src="https://www.w3schools.com/cs/Newproject2.png" alt="C# Install">
+        <p>Choose "Console App (.NET Core)" from the list and click on the Next button:
+        </p>
+        <img src="https://www.w3schools.com/cs/Consoleapp.png" alt="C# Install">
+        <p>Enter a name for your project, and click on the Create button: </p>
+        <img src="https://www.w3schools.com/cs/saveas.png" alt="C# Install">
+        <p>Visual Studio will automatically generate some code for your project: </p>
+        <img src="https://www.w3schools.com/cs/Program.png" alt="C# Install">
+        <p>The code should look something like this: </p>
+        <code>using System;<br>
+          namespace HellowWorld;<br>
+          {<br>
+            &nbsp; class Program <br>
+            &nbsp;&nbsp;{<br>
+              &nbsp;&nbsp;&nbsp;static void Main(string[] args)
+              <br>&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Hello World!");<br>
+                &nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;}<br>
+              }<br>
+          </code>
+      </section>
+      <section class="main-section">
+        <header id="syntax">
+          <h3>C# Syntax</h3>
+        </header>
+        <p>In the previous chapter, we created a C# file called Program.cs, and we used the following code to print
+          "Hello World" to the screen:</p>
+        <code>using System;<br>
+            namespace HellowWorld;<br>
+            {<br>
+              &nbsp; class Program <br>
+              &nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;static void Main(string[] args)
+                <br>&nbsp;&nbsp;&nbsp;{<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Hello World!");<br>
+                  &nbsp;&nbsp;&nbsp;}<br>
+                  &nbsp;}<br>
+                }<br>
+            </code>
+        <p>Result: <code>Hello World!</code></p>
+        <h3>Example explained</h3>
+        <p><strong>Line 1:</strong> <code>using System</code> means that we can use classes from the <code>Systen</code>
+          namespace.</p>
+        <p><strong>Line 2:</strong> A blank line. C# ignores white space. However, multiple lines makes the code more
+          readable.</p>
+        <p><strong>Line 3:</strong> <code>namespace</code> is used to organize your code, and it is a container for
+          classes and other namespaces.</p>
+        <p><strong>Line 4:</strong> The curly braces marks the beginning and end of a block of code.</p>
+        <p><strong>Line 5:</strong> <code>class</code> is a container for data and methods, which brings functionality
+          to your program. Every line of code that runs in C# must be inside a class. In our example, we named the class
+          Program.</p>
+        <p><strong>Line 7:</strong> Another thing that always appear in a C# program, is the <code>Main</code> method.
+          Any code
+          inside its curly
+          brackets <code>{}</code> will be executed. You don't have to understand the keywords before and after Main.
+          You will get to
+          know them bit by bit while reading this tutorial.</p>
+        <p>
+          <string>Line 9:</string> Console is a class of the System namespace, which has a <code>WriteLine()</code>
+          method that is
+          used to
+          output/print text. In our example it will output "Hello World!".
+        </p>
+        <p>If you omit the using System line, you would have to write System.Console.WriteLine() to print/output text.
+        </p>
+        <p><strong>Every C#</strong> statement ends with a semicolon <code>;</code>.</p>
+        <p><strong>Note:</strong> C# is case-sensitive: "MyClass" and "myclass" has different meaning.</p>
+        <p><strong>Note:</strong>Unlike Java, the name of the C# file does not have to match the class name, but they
+          often do (for better organization). When saving the file, save it using a proper name and add ".cs" to the end
+          of the filename. To run the example above on your computer, make sure that C# is properly installed: Go to the
+          Get Started Chapter for how to install C#. The output should be:</p>
+        <code>Hello World!</code>
+        <h3>WriteLine or Write</h3>
+        <p>The most common method to output something in C# is <code>WriteLine()</code>, but you can also use
+          <code>Write()</code>.
+
+          The difference is that <code>WriteLine()</code> prints the output on a new line each time, while
+          <code>Write()</code>
+          prints on the same
+          line (note that you should remember to add spaces when needed, for better readability):
+        </p>
+        <code>Console.WriteLine("Hello World!"); <br> 
+            Console.WriteLine("I will print on a new line.");<br>
+            Console.Write("Hello World! "); <br>
+            Console.Write("I will print on the same line.");  </code><br><br>
+        <code>Hello World!<br>
+          I will print on a new line. <br>
+          Hello World! I will print on the same line.</code>
+      </section>
+      <section class="main-section">
+        <header id="comments">
+          <h3>C# Comments</h3>
+        </header>
+        <p>Comments can be used to explain C# code, and to make it more readable. It can also be used to prevent
+          execution when testing alternative code.</p>
+        <h3>Single-line comments</h3>
+        <p>Single-line comments start with two forward slashes (<code>//</code>).</p>
+        <p>Any text between <code>//</code> and the end of the line is ignored by C# (will not be executed).</p>
+        <p>Here is an example:</p>
+        <code>// This is a comment <br>
+          Console.WriteLine("Hello World!");
+        </code>
+        <p>This example uses a single-line comment at the end of a line of code:</p>
+        <code>Console.WriteLine("Hello World!"); // This is a comment</code>
+        <h3>C# Multi-line Comments</h3>
+        <p>Multi-line comments start with <code>/*</code> and ends with <code>*/</code>.</p>
+        <p>Any text between <code>/*</code> and <code>*/</code> is ignored by C#.</p>
+        <p>This example uses multi-line comment (a comment block) to explain code:</p>
+        <code>/* The code below will print the words Hello World <br>
+          to the screen, and it is amazing */ <br>
+          Console.WriteLine("Hello World!"); </code>
+      </section>
+      <section class="main-section">
+        <header id="variables">
+          <h3>C# Variables</h3>
+        </header>
+        <p>Variables are containers for storing data values.</p>
+        <p>In C#, there are different <strong>types</strong> of variables (defined wth different keywords), for example:
+        </p>
+        <ul>
+          <li><code>int</code>- stores (whole numbers), without decimals</li>
+          <li><code>double</code>- stores floating point numbers, with decimals</li>
+          <li><code>char</code>- stores single characters, such as 'a' or 'B. Char values are surrounded by single
+            quotes</li>
+          <li><code>string</code>- stores text, such as "Hello World". String valyes are surrounded by double quotes
+          </li>
+          <li><code>bool</code>- stores values with two states: true or false</li>
+        </ul>
+        <h3>Declaring (Creating) Variables</h3>
+        <p>To create a variable, you must specify the type and assign it a value:</p>
+        <code>type variableName = value;</code>
+        <p>Where <i>type</i> is a C# type (such as int or string), and variableName is the name of the variable (such as
+          x or name). The equal sign is used to assign values to the variable.</p>
+        <p>To create a variable that should store text, look at the following example:</p>
+        <p> Create a variable called <strong>name</strong> of type <code>string</code> and assign it the value
+          <strong>"John"</strong>:
+        </p>
+        <code>string name = "John"; <br>
+        Console.WriteLine(name);</code>
+        <p>To create a variable that should store a number, look at the following example:</p>
+        <p>Create a variable called strong<strong>myNum</strong> of type <code>int</code> and assign it the value
+          <strong>15</strong>:
+        </p>
+        <code>int myNum = 15; <br>
+        Console.WriteLine(myNum);</code>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>
